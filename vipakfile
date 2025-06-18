@@ -1,0 +1,15 @@
+NAME      = SemVer
+VERSION   = 0.1.0
+
+AUTHOR    = Antranig Vartanian <antranig@vartanian.am>
+LICENSE   = BSD-2-Clause
+
+DEPS      =
+
+RUN       =
+MAIN      =
+BUILD     = %projdir%/src/SemVer.Mod
+
+TEST_RUN  = ./SemVerTest
+TEST_MAIN = %projdir%/tests/SemVerTest.Mod
+TEST      =

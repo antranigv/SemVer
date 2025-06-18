@@ -186,7 +186,7 @@ BEGIN
     Out.String("; expected="); PrintBool(tests[i].valid);
     Out.String("; actual="); PrintBool(ok); Out.Ln;
 
-    IF ok # tests[i].valid THEN Out.String("Test failed!!!"); Out.Ln; RETURN END;
+    IF ok # tests[i].valid THEN Out.String("Test failed!!!"); Out.Ln; HALT(1) END;
 
     IF ok THEN
       PrintVersion(v);
